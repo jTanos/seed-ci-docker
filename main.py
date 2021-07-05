@@ -6,11 +6,11 @@ import signal
 from api.handlers.loghandler import LogHandler
 from api import wsgi
 
-if __name__ == '__main__':
-    
+if __name__ == '__main__':    
     try:
-        wsgi.start_server()	
+        wsgi.start_server()       
     except Exception as e:
+        print(str(e))
         LogHandler.getCurrentClassLogger().exception("Error Main. %s", e)
     finally:
         wsgi.stop_server()

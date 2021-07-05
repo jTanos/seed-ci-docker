@@ -4,7 +4,7 @@
 
 DEBUG = True
 CONSOLE = False
-LOG_TO_DB = True
+LOG_TO_DB = False
 DO_TRACE = False
 WEB_API_HOST = '0.0.0.0:5000'
 

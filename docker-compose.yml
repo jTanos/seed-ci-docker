@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+ web-api:
+    container_name: ci-webapi
+    build: .
+    image: ci-webapiflask #nombre de la imagen que hemos creado
+    restart: always
+    ports:
+        - '5000:5000'
