@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.9'
 services:
     web-api:
         container_name: ci-webapi
@@ -7,4 +7,3 @@ services:
         restart: always
         ports:
             - '5000:5000'
-    
